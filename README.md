@@ -71,5 +71,3 @@ The system follows a modular security filter chain architecture:
 -   `GET /api/v1/user/profile` - Protected: Requires valid JWT or OAuth2 Session.
 -   `GET /api/v1/admin/**` - Protected: Requires `ROLE_ADMIN`.
 
-## 📝 Author
-**Aranck Jomraj** Computer Engineering Student at Mukesh Patel School of Technology Management and Engineering (MPSTME).
