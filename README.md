@@ -2,7 +2,7 @@
 
 This project serves as a robust, production-ready security template for Spring Boot applications. It integrates **Spring Security 6**, **OAuth2**, and **JSON Web Tokens (JWT)** to provide a dual-layered authentication mechanism: traditional credential-based login and modern social login providers.
 
-## 🛡️ Core Security Features
+## Core Security Features
 
 -   **OAuth2 Social Login:** Seamless integration with external providers including **Google** and **GitHub** using Spring Security's OAuth2 client.
 -   **Stateless JWT Authentication:** Implementation of stateless sessions using JWT for secure, scalable API communication.
@@ -11,7 +11,7 @@ This project serves as a robust, production-ready security template for Spring B
 -   **CORS & CSRF Protection:** Pre-configured security headers and Cross-Origin Resource Sharing (CORS) policies.
 -   **Centralized Exception Handling:** Custom `AuthenticationEntryPoint` and `AccessDeniedHandler` for consistent API error responses.
 
-## 🏗️ Technical Architecture
+## Technical Architecture
 
 The system follows a modular security filter chain architecture:
 
@@ -20,7 +20,7 @@ The system follows a modular security filter chain architecture:
 3.  **Custom UserDetailsService:** Loads user-specific data from the database for standard login flows.
 4.  **OAuth2 Success Handler:** Custom logic to handle post-authentication redirects and JWT generation after a successful social login.
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 -   **Backend:** Java 17+, Spring Boot 3.x
 -   **Security:** Spring Security 6.x, OAuth2 Client, JJWT (Java JWT)
@@ -28,7 +28,7 @@ The system follows a modular security filter chain architecture:
 -   **Documentation:** Swagger UI / OpenAPI 3
 -   **Build Tool:** Maven
 
-## 🚦 Getting Started
+## Getting Started
 
 ### Prerequisites
 -   JDK 17 or higher
@@ -63,7 +63,7 @@ The system follows a modular security filter chain architecture:
     mvn spring-boot:run
     ```
 
-## 🔐 API Endpoints
+## API Endpoints
 
 -   `POST /api/v1/auth/register` - Public: User registration.
 -   `POST /api/v1/auth/login` - Public: Returns a JWT on success.
